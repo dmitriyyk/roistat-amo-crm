@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Форма заказа продукта</h1>
+  <form class="form">
+    <div>
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div>
+      <label for="phone">Ваш телефон:</label>
+      <input type="text" id="phone" name="phone" required>
+    </div>
+    
+    <div>
+      <label for="mail">Ваш email:</label>
+      <input type="mail" id="mail" name="mail">
+    </div>
+
+    
+    <div>
+      <label for="comment">Комментарий к заказу:</label>
+      <textarea id="comment" name="comment" placeholder="Удобно принять заказ вечером..."></textarea>
+    </div>
+
+    <button type="submit">Заказать</button>
+  </form>
+
+
+  <!-- Roistat Counter Start -->
+  <script>
+  (function(w, d, s, h, id) {
+      w.roistatProjectId = id; w.roistatHost = h; w.roistatPage = d.location.href; w.roistatReferrer = d.referrer;
+      var p = d.location.protocol == "https:" ? "https://" : "http://";
+      var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
+      var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+  })(window, document, 'script', 'cloud.roistat.com', '4ca39150362f1466360eda89b5fd949f');
+  </script>
+  <!-- Roistat Counter End -->
+</body>
+</html>
